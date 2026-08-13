@@ -50,8 +50,11 @@ class ContaBancaria:
         for conta in contas:
             if chave_destinatario == conta.chavepix:
                 if valor <= self.saldo :
-                    self.saldo -= valor
-                    conta.saldo += valor
+                    
+                    
+
+
+                    
                     print(f'Pix realizado no valor de {valor} para {conta.titular}')
                     self.historico.append(f'Pix enviado ------------ -{valor} --> {conta.titular}')
 
